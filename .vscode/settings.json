@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "DarDerDor Expo/lib/xstream-1.4.20.jar"
+    ]
+}
