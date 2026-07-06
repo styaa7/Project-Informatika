@@ -1,0 +1,29 @@
+<list>
+  <Order>
+    <orderId>1234</orderId>
+    <customerName>satya</customerName>
+    <productId>tas</productId>
+    <totalPrice>1200000.0</totalPrice>
+    <status>Shipped</status>
+    <tanggalPesanan>2026-07-02</tanggalPesanan>
+    <ratioProgress>0.7</ratioProgress>
+  </Order>
+  <Order>
+    <orderId>12344</orderId>
+    <customerName>faras</customerName>
+    <productId>sepatu</productId>
+    <totalPrice>340000.0</totalPrice>
+    <status>Processing</status>
+    <tanggalPesanan>2026-07-03</tanggalPesanan>
+    <ratioProgress>0.5</ratioProgress>
+  </Order>
+  <Order>
+    <orderId>555555</orderId>
+    <customerName>gaga</customerName>
+    <productId>tttttt</productId>
+    <totalPrice>6000000.0</totalPrice>
+    <status>Waiting for Payment</status>
+    <tanggalPesanan>2026-07-08</tanggalPesanan>
+    <ratioProgress>0.0</ratioProgress>
+  </Order>
+</list>

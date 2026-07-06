@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="850" prefWidth="1400" stylesheets="@../../css/admin-dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="craftflow.controller.admin.ProductManagementController">
+
+    <!-- ========================= SIDEBAR ========================= -->
+    <left>
+        <VBox styleClass="sidebar">
+            <HBox alignment="CENTER_LEFT" spacing="8">
+                <Label style="-fx-text-fill: #2f6fed; -fx-font-size: 18px;" />
+                <Label styleClass="logo-text" text="CraftFlow" />
+            </HBox>
+
+            <Region prefHeight="25" />
+
+            <VBox spacing="6">
+                <Button maxWidth="Infinity" onAction="#goDashboard" styleClass="nav-item" text="Dashboard" />
+                <Button maxWidth="Infinity" onAction="#goOrder" styleClass="nav-item" text="Order" />
+                <Button maxWidth="Infinity" onAction="#goProduct" styleClass="nav-item-active" text="Product" />
+                <Button maxWidth="Infinity" onAction="#goCustomer" styleClass="nav-item" text="null" />
+                <Button maxWidth="Infinity" onAction="#goEmployee" styleClass="nav-item" text="null" />
+                <Button maxWidth="Infinity" onAction="#goBilling" styleClass="nav-item" text="null" />
+                <Button maxWidth="Infinity" onAction="#goAnalytics" styleClass="nav-item" text="null" />
+                <Button maxWidth="Infinity" onAction="#goSetting" styleClass="nav-item" text="Setting  " />
+                <Button maxWidth="Infinity" onAction="#goHelp" styleClass="nav-item" text="Help" />
+            </VBox>
+
+            <Region VBox.vgrow="ALWAYS" />
+
+            <Separator />
+            <Button maxWidth="Infinity" onAction="#handleLogout" styleClass="nav-logout" text="Log out" />
+        </VBox>
+    </left>
+
+    <!-- ========================= MAIN CONTENT ========================= -->
+    <center>
+        <VBox spacing="20" style="-fx-padding: 25;">
+
+            <!-- ===== Top Bar ===== -->
+            <HBox alignment="CENTER_LEFT" spacing="15">
+                <TextField fx:id="txtSearch" prefWidth="400" promptText="🔍  Search" styleClass="search-field" />
+                <Region HBox.hgrow="ALWAYS" />
+                <StackPane styleClass="icon-btn"><Label text="✉" /></StackPane>
+                <StackPane styleClass="icon-btn"><Label text="🔔" /></StackPane>
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <StackPane styleClass="avatar-circle" />
+                    <VBox spacing="2">
+                        <Label styleClass="user-name" text="Jane Cooper" />
+                        <Label styleClass="user-email" text="jane234@example.com" />
+                    </VBox>
+                    <Label style="-fx-text-fill: #9aa0ac;" />
+                </HBox>
+            </HBox>
+
+            <!-- ===== Content Card ===== -->
+            <VBox spacing="20" styleClass="content-card" VBox.vgrow="ALWAYS">
+
+                <HBox alignment="CENTER_LEFT" spacing="12">
+                    <Label styleClass="page-title" text="Product" />
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Button onAction="#handleDeleteProduct" style="-fx-background-color: red;" styleClass="btn-primary" text="Delete Product" />
+               <Button layoutX="927.0" layoutY="11.0" onAction="#handleUpdateProduct" styleClass="btn-primary" text="Update Product" />
+               <Button layoutX="754.0" layoutY="11.0" onAction="#handleAddProduct" styleClass="btn-primary" text="Add New Product" />
+                </HBox>
+
+                <TableView fx:id="tableProducts" styleClass="data-table" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="tcName" prefWidth="220" text="Product Name" />
+                        <TableColumn fx:id="tcIdProduct" prefWidth="130" text="Product ID" />
+                        <TableColumn fx:id="tcPrice" prefWidth="100" text="Price" />
+                        <TableColumn fx:id="tcStock" prefWidth="100" text="Stock" />
+                        <TableColumn fx:id="tcKategori" prefWidth="120" text="Type" />
+                        <TableColumn fx:id="tcStatus" prefWidth="120" text="Status" />
+                    </columns>
+                </TableView>
+
+                <HBox alignment="CENTER" spacing="10">
+               <TextField fx:id="stockField" promptText="Stock" styleClass="search-field" />
+               <TextField fx:id="priceField" promptText="Price" styleClass="search-field" />
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Region HBox.hgrow="ALWAYS" />
+                </HBox>
+
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>

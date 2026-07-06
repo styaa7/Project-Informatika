@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.CustomerDashboardController"
+            prefWidth="900" prefHeight="600">
+
+    <!-- ===== Sidebar Menu ===== -->
+    <left>
+        <VBox spacing="10" prefWidth="200" style="-fx-background-color: #2c3e50; -fx-padding: 20;">
+            <Label text="Customer Menu" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <Separator/>
+
+            <Button fx:id="btnCatalog" text="Catalog" maxWidth="Infinity" onAction="#handleCatalog"/>
+            <Button fx:id="btnMyOrders" text="My Orders" maxWidth="Infinity" onAction="#handleMyOrders"/>
+            <Button fx:id="btnTracking" text="Tracking" maxWidth="Infinity" onAction="#handleTracking"/>
+        </VBox>
+    </left>
+
+    <!-- ===== Content Area ===== -->
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-padding: 20;">
+            <Label fx:id="lblWelcome" text="Selamat datang, Customer!" style="-fx-font-size: 20px;"/>
+        </StackPane>
+    </center>
+
+    <!-- ===== Header ===== -->
+    <top>
+        <VBox style="-fx-background-color: #34495e; -fx-padding: 15;">
+            <Label text="Customer Dashboard" style="-fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+
+</BorderPane>

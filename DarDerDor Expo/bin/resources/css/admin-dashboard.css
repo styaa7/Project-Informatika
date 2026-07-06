@@ -1,0 +1,240 @@
+/* ===================== ROOT ===================== */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #eef0f5;
+}
+
+/* ===================== SIDEBAR ===================== */
+.sidebar {
+    -fx-background-color: white;
+    -fx-padding: 25 15 20 15;
+    -fx-min-width: 220;
+    -fx-pref-width: 220;
+}
+
+.logo-text {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+}
+
+.nav-item {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 15 10 15;
+    -fx-font-size: 14px;
+    -fx-text-fill: #4a4a4a;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 12;
+}
+
+.nav-item:hover {
+    -fx-background-color: #f2f4f8;
+}
+
+.nav-item-active {
+    -fx-background-color: #2f6fed;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 15 10 15;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-graphic-text-gap: 12;
+}
+
+.nav-logout {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 15 10 15;
+    -fx-font-size: 14px;
+    -fx-text-fill: #4a4a4a;
+    -fx-graphic-text-gap: 12;
+}
+
+/* ===================== TOP BAR ===================== */
+.search-field {
+    -fx-background-color: #f2f4f8;
+    -fx-background-radius: 20;
+    -fx-padding: 8 15 8 15;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #9aa0ac;
+}
+
+.icon-btn {
+    -fx-background-color: #f2f4f8;
+    -fx-background-radius: 50%;
+    -fx-min-width: 38;
+    -fx-min-height: 38;
+    -fx-max-width: 38;
+    -fx-max-height: 38;
+    -fx-alignment: CENTER;
+    -fx-cursor: hand;
+}
+
+.avatar-circle {
+    -fx-background-color: #cfd8dc;
+    -fx-background-radius: 50%;
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-max-width: 40;
+    -fx-max-height: 40;
+}
+
+.user-name {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+}
+
+.user-email {
+    -fx-font-size: 11px;
+    -fx-text-fill: #9aa0ac;
+}
+
+/* ===================== CONTENT CARD ===================== */
+.content-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 25;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+}
+
+.showing-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6b7280;
+}
+
+.btn-secondary {
+    -fx-background-color: white;
+    -fx-border-color: #dfe3ea;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 8 16 8 16;
+    -fx-font-size: 13px;
+    -fx-text-fill: #4a4a4a;
+    -fx-cursor: hand;
+}
+
+.btn-primary {
+    -fx-background-color: #2f6fed;
+    -fx-background-radius: 10;
+    -fx-padding: 8 18 8 18;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+/* ===================== TABLE ===================== */
+.data-table {
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.data-table .column-header-background {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 5 0;
+}
+
+.data-table .column-header .label {
+    -fx-text-fill: #161718;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* .data-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f0f1f5 transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 6 0 6 0;
+} */
+
+.data-table .table-cell {
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* ===================== STATUS BADGES ===================== */
+.badge {
+    -fx-padding: 4 14 4 14;
+    -fx-background-radius: 20;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+.badge-pending   { -fx-background-color: #fdf1dc; -fx-text-fill: #e2a03f; }
+.badge-active    { -fx-background-color: #e1f7e8; -fx-text-fill: #2fb355; }
+.badge-inactive  { -fx-background-color: #fde3e3; -fx-text-fill: #e5484d; }
+.badge-onsale    { -fx-background-color: #e3edfd; -fx-text-fill: #2f6fed; }
+.badge-bouncing  { -fx-background-color: #f0e6fd; -fx-text-fill: #8b5cf6; }
+.badge-processing { -fx-background-color: #e3edfd; -fx-text-fill: #2f6fed; }
+.badge-shipped    { -fx-background-color: #f0e6fd; -fx-text-fill: #8b5cf6; }
+.badge-completed  { -fx-background-color: #e1f7e8; -fx-text-fill: #2fb355; }
+.badge-cancelled  { -fx-background-color: #fde3e3; -fx-text-fill: #e5484d; }
+
+/* ===================== PAGINATION ===================== */
+.page-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 13px;
+    -fx-padding: 6 12 6 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.page-btn-active {
+    -fx-background-color: #2f6fed;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12 6 12;
+    -fx-background-radius: 8;
+}
+
+/* ===================== DASHBOARD STAT CARDS ===================== */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 20;
+    -fx-min-width: 220;
+}
+
+.stat-icon {
+    -fx-background-radius: 50%;
+    -fx-min-width: 44;
+    -fx-min-height: 44;
+    -fx-max-width: 44;
+    -fx-max-height: 44;
+    -fx-alignment: CENTER;
+}
+
+.stat-icon-blue   { -fx-background-color: #e3edfd; }
+.stat-icon-green  { -fx-background-color: #e1f7e8; }
+.stat-icon-orange { -fx-background-color: #fdf1dc; }
+.stat-icon-purple { -fx-background-color: #f0e6fd; }
+
+.stat-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+}
+
+.stat-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #9aa0ac;
+}
+
+.stat-growth-up {
+    -fx-font-size: 11px;
+    -fx-text-fill: #2fb355;
+    -fx-font-weight: bold;
+}

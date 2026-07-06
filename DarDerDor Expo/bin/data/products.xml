@@ -1,0 +1,8 @@
+<products>
+    <product>
+        <id>P001</id>
+        <name>Leather Bag</name>
+        <price>500000</price>
+        <stock>10</stock>
+    </product>
+</products>
