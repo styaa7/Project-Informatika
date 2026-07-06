@@ -74,28 +74,24 @@
                     <StackPane styleClass="stat-icon, stat-icon-blue"><Label text="🛒" /></StackPane>
                     <Label fx:id="lblTotalOrders" styleClass="stat-value" text="0" />
                     <Label styleClass="stat-label" text="Total Orders" />
-                    <Label styleClass="stat-growth-up" text="▲ 12% from last month" />
                 </VBox>
 
                 <VBox spacing="12" styleClass="stat-card" HBox.hgrow="ALWAYS">
                     <StackPane styleClass="stat-icon, stat-icon-green"><Label text="📦" /></StackPane>
                     <Label fx:id="lblTotalProducts" styleClass="stat-value" text="0" />
                     <Label styleClass="stat-label" text="Total Products" />
-                    <Label styleClass="stat-growth-up" text="▲ 4% from last month" />
                 </VBox>
 
                 <VBox spacing="12" styleClass="stat-card" HBox.hgrow="ALWAYS">
                     <StackPane styleClass="stat-icon, stat-icon-orange"><Label text="💰" /></StackPane>
                     <Label fx:id="lblTotalRevenue" styleClass="stat-value" text="Rp.0" />
                     <Label styleClass="stat-label" text="Total Revenue" />
-                    <Label styleClass="stat-growth-up" text="▲ 8% from last month" />
                 </VBox>
 
                 <VBox spacing="12" styleClass="stat-card" HBox.hgrow="ALWAYS">
                     <StackPane styleClass="stat-icon, stat-icon-purple"><Label text="👥" /></StackPane>
                     <Label fx:id="lblTotalCustomers" styleClass="stat-value" text="0" />
                     <Label styleClass="stat-label" text="Total Customers" />
-                    <Label styleClass="stat-growth-up" text="▲ 6% from last month" />
                 </VBox>
             </HBox>
 
